@@ -1,0 +1,13 @@
+BEGIN quadraticEquation(a,b,c)
+    Let x = 0
+    LET discriminant = b*b-(4*a*c)
+    LET xpos, xneg = 0,0
+    IF discriminant >= 0 THEN
+        xpos = (-b+discriminant)/2*a
+        xneg = (-b-discriminant)/2*a
+    ELSE
+        PRINT "no real answer"
+        RETURN 0,0
+    ENDIF
+    RETURN xpos, xneg
+END quadraticEquation
